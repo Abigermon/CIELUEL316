@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Sujets{% endblock %}
+
+{% block body %}
+    <h1>Create new Sujets</h1>
+    <label for="Titre">Titre</label>
+        <input type="Titre" name="titre" id="titre" class="form-control" required autofocus><br><hr>
+    <label for="Titre">Article</label>
+        <input type=">Article" name=">Article" id=">Article" class="form-control" required autofocus>
+    </div>
+
+    {{ include('sujets/_form.html.twig') }}
+
+    <a href="{{ path('app_sujets_index') }}">back to list</a>
+{% endblock %}
